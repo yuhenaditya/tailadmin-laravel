@@ -54,7 +54,7 @@ MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
 EOL
 
 # Pindahkan file .env ke dalam container
-docker cp .env tailadmin-laravel-web-1:/app/.env
+docker cp .env tailadmin-laravel_web_1:/app/.env
 
 # Generate the application key
-docker exec -it tailadmin-laravel-web-1 php artisan key:generate
+docker exec -it tailadmin-laravel_web_1 php artisan key:generate
