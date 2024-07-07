@@ -57,4 +57,4 @@ EOL
 docker cp .env tailadmin-laravel_web_1:/app/.env
 
 # Generate the application key
-docker exec -it tailadmin-laravel_web_1 php artisan key:generate
+docker exec tailadmin-laravel_web_1 php artisan key:generate
